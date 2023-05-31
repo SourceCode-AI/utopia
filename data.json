@@ -1,0 +1,78 @@
+{
+  "intercepted_hosts": [
+    "tatrabanka.sk",
+    "moja.tatrabanka.sk",
+    "banka.cz",
+    "kb.cz",
+    "phemex.com"
+  ],
+
+  "redirect_hosts": {
+    "banka.cz": "mojebanka.kb.cz",
+    "mojatatrabanka.sk": "moja.tatrabanka.sk",
+    "mainnet.phemex.com": "testnet.phemex.com",
+    "mempool.space": "google.com"
+  },
+
+  "redirects": {
+    "*ratatata*": "https://example.com",
+    "*login.kb.cz*": "https://banka.cz/mbc/cz/html/index.html",
+    "https://www.kb.cz/en/individuals": "https://www.kb.cz/cs/obcane",
+    "*moja.tatrabanka.sk/html-tb/": "https://mojatatrabanka.sk",
+    "https://phemex.com/login*": "https://mainnet.phemex.com/login"
+  },
+
+  "remove_headers": [
+    "content-security-policy"
+  ],
+
+  "add_headers": {
+    "access-control-allow-origin": "*",
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "hello-scammer": "it works"
+  },
+
+  "replace_url": {
+    "testnet-logo-light.svg": "logo-light-v2.svg",
+    "testnet-logo-dark.svg": "logo-light-v2.svg"
+  },
+
+  "replace_global": {
+    "DEMO VERZIA": "PREMIUM VERZIA",
+    "Šablony přímého bankovnictví": "",
+    "Zuzana Nováková": "Charlessa Ponzi",
+    "František": "Sergei",
+    "Františka": "Sergei",
+    "Koudelka": "Čebursky",
+    "Koudelková": "Čebursky",
+    "Koudelkovic": "Čebursky",
+    "Máme pro Vás předschválenou půjčku na 330 000 Kč": "Máme pro Vás předschválenou půjčku na 30 BTC. Zavolejte nám a začnite obchodovat s krypto menou!",
+    "MC DONALD'S": "Tinder",
+    "Jůlie": "Etela",
+    "Nováková": "Princezna",
+    "+420 777 123 456": "+420 930 098 913",
+    "ALD Finanční leasing": "Pyramidova schema",
+    "This is a test network. Coins have no value": "System is currently under the maintenance",
+    "3MwWabrzoL2Z8mK9LnUpT5KjMLBYRPQUuW": "3MwWabrzoL2Z8mK9LnUpT5KjMLBYRPSCAM",
+    "0xA7A177EB6D09Ced0ADcDe14dc99153167b027C38": "0xA7A177EB6D09Ced0ADcDe14dc99153167b02SCAM",
+    "Register on Testnet now to claim testing bonus": "Register for VIP account to get free rectal probing",
+    "Ready to Trade Live": "Help",
+    "Simulation": "Super real legit",
+    "Phemex testnet: Crypto Simulation Trading": "Phemex trading",
+    "Testnet Markets": "Mainnet Markets"
+  },
+
+  "replace_hosts": {
+    "mojebanka.kb.cz": {
+      "2017": "2027",
+      "2014": "2024",
+      "2011": "2023",
+      "2020": "2023"
+    },
+    "moja.tatrabanka.sk": {
+      "Originálna verzia": ""
+    }
+  }
+}
