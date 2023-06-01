@@ -2,11 +2,21 @@ Setup
 ----
 
 banka.cz ---[ CNAME ]---> mojebanka.kb.cz
-mojatatrabanka.sk ---[ CNAME ]---> moja.tatrabanka.sk
+mojebanka-kb.cz ---[ CNAME ]---> example.com
+mojatatrabanka.sk ---[ CNAME ]---> example.com
 mainnet.phemex.com ---[ CNAME ]---> testnet.phemex.com
 api10-mainnet.phemex.com ---[ CNAME ]---> testnet.phemex.com
+business-24.cz ---[ CNAME ]---> example.com
+
+Required python packages, using virtualenv is highly recommended:
+
+- mitmproxy
+- cssselect
+- lxml
 
 
-Install mitmproxy & SSL interception certs on the target host ( https://docs.mitmproxy.org/stable/overview-getting-started/#configure-your-browser-or-device )
+Configure SSL interception certs on the target host ( https://docs.mitmproxy.org/stable/overview-getting-started/#configure-your-browser-or-device )
+
+
 
 run `mitmweb --listen-host 0.0.0.0 -s utopia.py`
